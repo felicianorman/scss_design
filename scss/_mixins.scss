@@ -1,0 +1,32 @@
+@use "variables" as var;
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin nav-bar {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255,255,255, 0.2);
+    font-size: 20px;
+}
+
+@mixin list {
+    list-style-type: none;
+    text-align: center;
+}
+
+@mixin list-links {
+    text-decoration: none;
+    color: var.$primary-color;
+}
+
