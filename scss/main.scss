@@ -45,3 +45,17 @@ h1 {
         background-position: center;
     }
 }
+
+.container {
+   @include mixins.container-text;
+
+   @include mixins.tablet {
+    height: 90vh;
+    
+   }
+}
+
+.home {
+    color: var.$primary-color;
+    text-align: center;
+}

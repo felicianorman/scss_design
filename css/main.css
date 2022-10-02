@@ -52,4 +52,21 @@ h1 {
   }
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    height: 90vh;
+  }
+}
+
+.home {
+  color: white;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
