@@ -1,9 +1,4 @@
 @charset "UTF-8";
-img {
-  width: 50%;
-  border-radius: 50%;
-}
-
 body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
@@ -91,7 +86,6 @@ h1 {
   width: 65%;
   border-radius: 8px;
   font-size: 0.9em;
-  text-align: center;
 }
 .aboutus__text blockquote {
   padding: 5%;
@@ -103,9 +97,13 @@ h1 {
   position: absolute;
   font-weight: bold;
   top: -20%;
-  left: -7%;
-  padding: 5px;
+  left: -9%;
   font-family: Arial, Helvetica, sans-serif;
+}
+.aboutus img {
+  width: 50%;
+  border-radius: 50%;
+  filter: drop-shadow(5px 10px 10px rgba(68, 68, 68, 0.8666666667));
 }
 
 /*# sourceMappingURL=main.css.map */
