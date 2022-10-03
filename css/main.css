@@ -1,5 +1,12 @@
+@charset "UTF-8";
+img {
+  width: 50%;
+  border-radius: 50%;
+}
+
 body {
   margin: 0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 nav {
@@ -67,6 +74,33 @@ h1 {
 .home {
   color: white;
   text-align: center;
+}
+
+.aboutus h2 {
+  text-align: center;
+}
+.aboutus__rakib, .aboutus__alexandra, .aboutus__lasse, .aboutus__sebastian {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus__text {
+  background-color: lightgrey;
+  margin: 5%;
+  padding: 5%;
+  width: 60%;
+  border-radius: 8px;
+  font-size: 0.9em;
+  text-align: center;
+}
+.aboutus__text blockquote {
+  display: inline;
+}
+.aboutus__text blockquote:before {
+  content: "”";
+  font-size: 5em;
+  float: left;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -36,3 +36,49 @@
     align-items: center;
     height: 70vh;
 }
+
+@mixin about-us {
+    h2 {
+        text-align: center;
+    }
+
+    &__rakib, &__alexandra, &__lasse, &__sebastian {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        background-color: var.$aboutus-color;
+        margin: 5%;
+        padding: 5%;
+        width: 60%;
+        border-radius: 8px;
+        font-size: 0.9em;
+        text-align: center;
+
+        // p {
+        //     display: inline;
+        //     font-size: 1em;
+        // }
+
+        blockquote {
+            display: inline;
+        }
+
+        blockquote:before {
+            content: "\201d";
+            font-size: 5em;
+            float: left;
+            
+        }
+    }
+
+    }
+
+    img {
+        width: 50%;
+        border-radius: 50%;
+    }
+
