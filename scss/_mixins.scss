@@ -52,25 +52,25 @@
     &__text {
         background-color: var.$aboutus-color;
         margin: 5%;
-        padding: 5%;
-        width: 60%;
+        width: 65%;
         border-radius: 8px;
         font-size: 0.9em;
         text-align: center;
 
-        // p {
-        //     display: inline;
-        //     font-size: 1em;
-        // }
-
         blockquote {
-            display: inline;
+           padding: 5%;
+           position: relative;
         }
 
         blockquote:before {
             content: "\201d";
-            font-size: 5em;
-            float: left;
+            font-size: 6em;
+            position: absolute;
+            font-weight: bold;
+            top: -20%;
+            left: -7%;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
             
         }
     }
