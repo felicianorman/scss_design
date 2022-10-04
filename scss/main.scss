@@ -61,18 +61,28 @@ h1 {
     color: var.$primary-color;
     text-align: center;
 }
+h2 {
+    text-align: center;
+}
 
 .aboutus {
     @include mixins.about-us;
 
     @include mixins.tablet {
-        &.firstsection {
-            border: 1px solid red;
+        &.firstsection, &.secondsection {
             display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
-    }
 
+        img {
+            width: 250px;
         }
-    
+
+        &__text {
+            width: 400px;
+        }
+}
+} 
     
 

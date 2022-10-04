@@ -38,9 +38,9 @@
 }
 
 @mixin about-us {
-    h2 {
-        text-align: center;
-    }
+    // h2 {
+    //     text-align: center;
+    // }
 
     &__rakib, &__alexandra, &__lasse, &__sebastian {
         display: flex;
@@ -79,10 +79,4 @@
         filter: drop-shadow(5px 10px 10px #444d);
     }
 
-    // &__1 {
-    //     border: 1px solid red;
-    // }
 }
-
-  
-

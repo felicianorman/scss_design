@@ -72,9 +72,10 @@ h1 {
   text-align: center;
 }
 
-.aboutus h2 {
+h2 {
   text-align: center;
 }
+
 .aboutus__rakib, .aboutus__alexandra, .aboutus__lasse, .aboutus__sebastian {
   display: flex;
   flex-direction: column;
@@ -107,9 +108,16 @@ h1 {
   filter: drop-shadow(5px 10px 10px rgba(68, 68, 68, 0.8666666667));
 }
 @media screen and (min-width: 768px) {
-  .aboutus.firstsection {
-    border: 1px solid red;
+  .aboutus.firstsection, .aboutus.secondsection {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .aboutus img {
+    width: 250px;
+  }
+  .aboutus__text {
+    width: 400px;
   }
 }
 
