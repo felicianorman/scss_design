@@ -1,5 +1,7 @@
 @use "mixins";
 @use "variables" as var;
+@use "hamburger";
+
 
 html {
     font-family: 'Times New Roman', Times, serif;
@@ -18,7 +20,7 @@ nav {
         font-size: 1em;
     }
 
-    @include mixins.hamburger;
+    @include hamburger.mobile-menu;
 }
 li {
     @include mixins.list;
@@ -89,4 +91,6 @@ h2 {
 }
 } 
     
-
+footer {
+    @include mixins.contact;
+}
