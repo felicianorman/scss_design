@@ -105,5 +105,10 @@ h1 {
   border-radius: 50%;
   filter: drop-shadow(5px 10px 10px rgba(68, 68, 68, 0.8666666667));
 }
+@media screen and (min-width: 768px) {
+  .aboutus {
+    flex-direction: row;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

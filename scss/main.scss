@@ -1,9 +1,10 @@
 @use "mixins";
 @use "variables" as var;
 
-body {
+html {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -63,4 +64,8 @@ h1 {
 
 .aboutus {
     @include mixins.about-us;
+
+    @include mixins.tablet {
+        flex-direction: row;
+    }
 }
