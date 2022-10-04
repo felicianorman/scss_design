@@ -1,7 +1,8 @@
 @charset "UTF-8";
-body {
+html {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -106,8 +107,9 @@ h1 {
   filter: drop-shadow(5px 10px 10px rgba(68, 68, 68, 0.8666666667));
 }
 @media screen and (min-width: 768px) {
-  .aboutus {
-    flex-direction: row;
+  .aboutus.firstsection {
+    border: 1px solid red;
+    display: flex;
   }
 }
 
