@@ -2,9 +2,12 @@
 @use "variables" as var;
 
 html {
-    margin: 0;
     font-family: 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
 }
 
 nav {
@@ -14,8 +17,9 @@ nav {
         justify-content: flex-end;
         font-size: 1em;
     }
-}
 
+    @include mixins.hamburger;
+}
 li {
     @include mixins.list;
 
