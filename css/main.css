@@ -140,10 +140,9 @@ h1 {
 
 .bg {
   background-image: url(/assets/negative-space-black-forest-dawn.jpg);
-  height: 100vh;
-  background-size: 210%;
+  background-size: 250%;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
 }
 @media screen and (min-width: 768px) {
   .bg {
@@ -176,7 +175,7 @@ h1 {
 .home .arrow-start .bi-arrow-down-circle-fill {
   position: absolute;
   font-size: 25px;
-  top: 240px;
+  top: 130px;
 }
 
 h2 {
@@ -202,7 +201,7 @@ h2 {
 }
 .aboutus__text blockquote:before {
   content: "”";
-  font-size: 6em;
+  font-size: 5em;
   position: absolute;
   font-weight: bold;
   top: -20%;
@@ -213,12 +212,6 @@ h2 {
   width: 50%;
   border-radius: 50%;
   filter: drop-shadow(5px 10px 10px rgba(68, 68, 68, 0.8666666667));
-}
-.aboutus .arrow-aboutus {
-  position: relative;
-}
-.aboutus .arrow-aboutus .bi-arrow-down-circle-fill {
-  color: black;
 }
 @media screen and (min-width: 768px) {
   .aboutus.firstsection, .aboutus.secondsection {

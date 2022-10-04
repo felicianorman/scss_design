@@ -60,7 +60,7 @@
 
         blockquote:before {
             content: "\201d";
-            font-size: 6em;
+            font-size: 5em;
             position: absolute;
             font-weight: bold;
             top: -20%;
@@ -76,13 +76,7 @@
         filter: drop-shadow(5px 10px 10px #444d);
     }
 
-    .arrow-aboutus {
-        position: relative;
-
-        .bi-arrow-down-circle-fill {
-            color: black;
-        }
-    }
+  
 
 }
 
