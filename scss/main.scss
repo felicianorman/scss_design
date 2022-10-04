@@ -66,7 +66,18 @@ h1 {
 .home {
     color: var.$primary-color;
     text-align: center;
+
+    .arrow-start {
+        position: relative;
+
+        .bi-arrow-down-circle-fill {
+            position: absolute;
+            font-size: 25px;
+            top: 240px;
+        }
+    }
 }
+
 h2 {
     text-align: center;
 }
@@ -89,6 +100,18 @@ h2 {
             width: 400px;
         }
 }
+
+    .arrow-aboutus {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .bi-arrow-down-circle-fill {
+            color: black;
+            font-size: 25px;
+            
+        }
+    }
 } 
     
 footer {

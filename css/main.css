@@ -170,6 +170,14 @@ h1 {
   color: white;
   text-align: center;
 }
+.home .arrow-start {
+  position: relative;
+}
+.home .arrow-start .bi-arrow-down-circle-fill {
+  position: absolute;
+  font-size: 25px;
+  top: 240px;
+}
 
 h2 {
   text-align: center;
@@ -206,6 +214,12 @@ h2 {
   border-radius: 50%;
   filter: drop-shadow(5px 10px 10px rgba(68, 68, 68, 0.8666666667));
 }
+.aboutus .arrow-aboutus {
+  position: relative;
+}
+.aboutus .arrow-aboutus .bi-arrow-down-circle-fill {
+  color: black;
+}
 @media screen and (min-width: 768px) {
   .aboutus.firstsection, .aboutus.secondsection {
     display: flex;
@@ -219,6 +233,15 @@ h2 {
     width: 400px;
   }
 }
+.aboutus .arrow-aboutus {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.aboutus .arrow-aboutus .bi-arrow-down-circle-fill {
+  color: black;
+  font-size: 25px;
+}
 
 footer {
   background-color: #000;
@@ -229,6 +252,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10%;
 }
 footer .contact__adress, footer .contact__email, footer .contact__icons {
   width: 60vw;
@@ -238,8 +262,8 @@ footer .contact__icons {
   width: 60vw;
   font-family: "Times New Roman", Times, serif;
 }
-footer .contact__icons .bi {
-  padding-right: 10px;
+footer .contact__icons span {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

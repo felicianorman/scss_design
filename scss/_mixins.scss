@@ -76,6 +76,14 @@
         filter: drop-shadow(5px 10px 10px #444d);
     }
 
+    .arrow-aboutus {
+        position: relative;
+
+        .bi-arrow-down-circle-fill {
+            color: black;
+        }
+    }
+
 }
 
 @mixin contact {    
@@ -87,6 +95,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10%;
 
     .contact__adress, .contact__email, .contact__icons {
         width: 60vw;
@@ -96,11 +105,8 @@
         padding-top: 10%;
         width: 60vw;
         font-family: 'Times New Roman', Times, serif;
-
-        .bi {
-            padding-right: 10px;
+        span {
+            padding: 10px;
         }
-
-
     }
 }
