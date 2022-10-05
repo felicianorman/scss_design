@@ -115,4 +115,19 @@ h2 {
 } 
 footer {
     @include mixins.contact;
+
+    @include mixins.tablet {
+        flex-direction: row;
+        font-size: 1.2em;
+        height: 10vh;
+
+        .contact__adress {
+            padding-left: 10%;
+        }
+
+        .contact__icons {
+            padding-top: 0;
+            padding-left: 10%;
+        }
+    }
 }

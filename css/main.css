@@ -247,17 +247,31 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1.5em;
 }
 footer .contact__adress, footer .contact__email, footer .contact__icons {
   width: 60vw;
 }
 footer .contact__icons {
-  padding-top: 10%;
   width: 60vw;
   font-family: "Times New Roman", Times, serif;
 }
 footer .contact__icons span {
   padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    font-size: 1.2em;
+    height: 10vh;
+  }
+  footer .contact__adress {
+    padding-left: 10%;
+  }
+  footer .contact__icons {
+    padding-top: 0;
+    padding-left: 10%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
