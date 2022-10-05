@@ -101,19 +101,18 @@ h2 {
         }
 }
 
-    .arrow-aboutus {
-        position: relative;
-        display: flex;
-        justify-content: center;
+} 
+.arrow-aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
 
-        .bi-arrow-down-circle-fill {
-            color: black;
-            font-size: 25px;
-            
-        }
+    .bi-arrow-down-circle-fill {
+        color: black;
+        font-size: 25px;
     }
 } 
-    
 footer {
     @include mixins.contact;
 }
