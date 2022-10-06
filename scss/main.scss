@@ -83,8 +83,6 @@ h1 {
                 top: 180px;
             }
         }
-   
-
     }
 }
 h2 {
@@ -122,6 +120,7 @@ h2 {
         font-size: 25px;
     }
 } 
+
 footer {
     @include mixins.contact;
 
