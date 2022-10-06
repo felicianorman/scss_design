@@ -4,7 +4,7 @@
 
 
 html {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Arial, serif;
     scroll-behavior: smooth;
 }
 
@@ -58,6 +58,7 @@ h1 {
 
    @include mixins.tablet {
     height: 90vh;
+    font-size: 1.1em;
     
    }
 }
@@ -65,18 +66,27 @@ h1 {
 .home {
     color: var.$primary-color;
     text-align: center;
+    
 
     .arrow-start {
+        display: flex;
+        justify-content: center;
         position: relative;
 
         .bi-arrow-down-circle-fill {
             position: absolute;
             font-size: 25px;
-            top: 130px;
+            top: 120px;
+
+            @include mixins.tablet {
+                font-size: 20px;
+                top: 180px;
+            }
         }
+   
+
     }
 }
-
 h2 {
     text-align: center;
 }
