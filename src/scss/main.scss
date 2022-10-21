@@ -1,0 +1,135 @@
+@use "mixins";
+@use "variables" as var;
+@use "hamburger";
+
+
+html {
+    font-family: 'Times New Roman', Arial, serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    @include mixins.nav-bar;
+
+    @include mixins.tablet {
+        justify-content: flex-end;
+        font-size: 1em;
+    }
+
+    @include hamburger.mobile-menu;
+}
+li {
+    @include mixins.list;
+
+    @include mixins.tablet {
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
+a {
+    @include mixins.list-links;
+}
+
+h1 {
+    margin: 0;
+}
+
+.bg {
+    background-image: url(/assets/negative-space-black-forest-dawn.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+   @include mixins.container-text;
+
+   @include mixins.tablet {
+    height: 90vh;
+    font-size: 1.1em;
+    
+   }
+}
+
+.home {
+    color: var.$primary-color;
+    text-align: center;
+    
+
+    .arrow-start {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        .bi-arrow-down-circle-fill {
+            position: absolute;
+            font-size: 25px;
+            top: 120px;
+
+            @include mixins.tablet {
+                font-size: 20px;
+                top: 180px;
+            }
+        }
+    }
+}
+h2 {
+    text-align: center;
+}
+
+.aboutus {
+    @include mixins.about-us;
+
+    @include mixins.tablet {
+        &.firstsection, &.secondsection {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        &__text {
+            width: 400px;
+        }
+}
+
+} 
+.arrow-aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+
+    .bi-arrow-down-circle-fill {
+        color: black;
+        font-size: 25px;
+    }
+} 
+
+footer {
+    @include mixins.contact;
+
+    @include mixins.tablet {
+        flex-direction: row;
+        font-size: 1.2em;
+        height: 10vh;
+
+        .contact__adress {
+            padding-left: 10%;
+        }
+
+        .contact__icons {
+            padding-top: 0;
+            padding-left: 10%;
+        }
+    }
+}
