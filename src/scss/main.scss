@@ -40,7 +40,7 @@ h1 {
 }
 
 .bg {
-    background-image: url(/assets/negative-space-black-forest-dawn.jpg);
+    background-image: url(/src/assets/negative-space-black-forest-dawn.jpg);
     background-size: cover;
     background-repeat: none;
     background-position: center;
@@ -67,10 +67,11 @@ h1 {
         justify-content: center;
         position: relative;
 
+
         .bi-arrow-down-circle-fill {
             position: absolute;
             font-size: 25px;
-            top: 120px;
+            top: 200px;
 
             @include mixins.tablet {
                 font-size: 20px;
