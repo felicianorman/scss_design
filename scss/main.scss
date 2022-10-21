@@ -41,16 +41,10 @@ h1 {
 
 .bg {
     background-image: url(/assets/negative-space-black-forest-dawn.jpg);
-    background-size: 250%;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: none;
     background-position: center;
-
-    @include mixins.tablet {
-        width: 100vw;
-        background-repeat: no-repeat;
-        background-size: 120%;
-        background-position: center;
-    }
+    height: 100vh;
 }
 
 .container {
